@@ -1,8 +1,8 @@
+server:  port: 8088  servlet:    context-path: /
+
 spring:
   data:
     mongodb:
       host: localhost
       port: 27017
-      database: MongoDB
-      username: testUser
-      password: 1234
+      database: test        mvc:    view:      suffix: .jsp      prefix: WEB-INF/views/    

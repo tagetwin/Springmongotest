@@ -1,7 +1,6 @@
 package com.yndg.springboot.service;
 
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,5 +20,9 @@ public class BoardService {
 	
 	public Board insertBoard(Board board) {
 		return boardRepository.insert(board);
+	}
+	
+	public void deleteBoard(String id) {
+		boardRepository.deleteById(id);
 	}
 }

@@ -10,7 +10,7 @@ import lombok.Data;
 public class Board {
 	
 	@Id
-	private String _id;
+	private String id;
 	private String title;
 	private String content;
 	
